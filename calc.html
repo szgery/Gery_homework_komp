@@ -35,14 +35,30 @@
     <div class="bg-image"></div>
         <div class="bg-text">
             <form action="/action_page.php">
-                <label for="fname">Matematika:</label><br>
-                <input type="text" id="matek" name="matek" value="100" min="0" max="100" required><br>
-                <label for="lname">Történelem:</label><br>
-                <input type="text" id="tori" name="tori" value="100" min="0" max="100" required><br>
-                <label for="lname">Magyar:</label><br>
-                <input type="text" id="magyar" name="magyar" value="100" min="0" max="100" required><br>
-                <label for="lname">Nyelv:</label><br>
-                <input type="text" id="nyelv" name="nyelv" value="100" min="0" max="100" required><br><br>
+                <!--Matek-->
+                <label for="matek">Matematika</label><br>
+                <label for="matek">Írásbeli:
+                    <input type="number" id="irasbeliMat" name="matek" value="100" min="0" max="100" required>
+                </label><label for="matek"> Szóbeli:</label>
+                <input type="number" id="szobeliMat" name="matek" value="50" min="0" max="50" required><br>
+                <!--Tori-->
+                <label for="tori">Történelem</label><br>
+                <label for="tori">Írásbeli:
+                    <input type="number" id="irasbeliTor" name="matek" value="100" min="0" max="100" required>
+                </label><label for="tori"> Szóbeli:</label>
+                <input type="number" id="szobeliTor" name="matek" value="33" min="0" max="33" required><br>
+                <!--Magyar-->
+                <label for="magyar">Magyar</label><br>
+                <label for="magyar">Írásbeli:
+                    <input type="number" id="irasbeliMagy" name="matek" value="100" min="0" max="100" required>
+                </label><label for="magyar"> Szóbeli:</label>
+                <input type="number" id="szobeliMagy" name="matek" value="50" min="0" max="50" required><br>
+                <!--Nyelv-->
+                <label for="nyelv">Nyelv</label><br>
+                <label for="nyelv">Írásbeli:
+                    <input type="number" id="irasbeliNyelv" name="matek" value="100" min="0" max="100" required>
+                </label><label for="nyelv"> Szóbeli:</label>
+                <input type="number" id="szobeliNyelv" name="matek" value="33" min="0" max="33" required><br>
                 <input type="submit" value="Számítás">
               </form>
               <p>Az eredményed: <span id="eredmeny"></span></p> 
