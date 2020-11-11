@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
-    <title>Honfoglalás</title>
     <script src="pontozas.js"></script>
+    <title>Honfoglalás</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark" style="background: coral;">
@@ -34,7 +34,7 @@
     </nav>
     <div class="bg-image"></div>
         <div class="bg-text">
-            <form action="/action_page.php">
+            <form onsubmit="return false">
                 <!--Matek-->
                 <label for="matek">Matematika</label><br>
                 <label for="matek">Írásbeli:
@@ -59,10 +59,8 @@
                     <input type="number" id="irasbeliNyelv" name="matek" value="100" min="0" max="100" required>
                 </label><label for="nyelv"> Szóbeli:</label>
                 <input type="number" id="szobeliNyelv" name="matek" value="33" min="0" max="33" required><br>
-                <input type="submit" value="Számítás">
               </form>
-              <p>Az eredményed: <span id="eredmeny"></span></p> 
+              <p id="eredmenyasd" onclick="Szamol()">Kattints ide az eredményedért<span id="eredmenyasd"></span></p> 
     </div>
 </body>
-
 </html>
