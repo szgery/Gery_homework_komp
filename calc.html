@@ -34,7 +34,7 @@
     </nav>
     <div class="bg-image"></div>
         <div class="bg-text">
-            <form onsubmit="return false">
+            <form>
                 <!--Matek-->
                 <label for="matek">Matematika</label><br>
                 <label for="matek">Írásbeli:
@@ -46,7 +46,7 @@
                 <label for="tori">Írásbeli:
                     <input type="number" id="irasbeliTor" name="matek" value="100" min="0" max="100" required>
                 </label><label for="tori"> Szóbeli:</label>
-                <input type="number" id="szobeliTor" name="matek" value="33" min="0" max="33" required><br>
+                <input type="number" id="szobeliTor" name="matek" value="60" min="0" max="60" required><br>
                 <!--Magyar-->
                 <label for="magyar">Magyar</label><br>
                 <label for="magyar">Írásbeli:
@@ -60,7 +60,7 @@
                 </label><label for="nyelv"> Szóbeli:</label>
                 <input type="number" id="szobeliNyelv" name="matek" value="33" min="0" max="33" required><br>
               </form>
-              <p id="eredmenyasd" onclick="Szamol()">Kattints ide az eredményedért<span id="eredmenyasd"></span></p> 
+              <p id="eredmenyasd" onclick="onClick()">Kattints ide az eredményedért</p>
     </div>
 </body>
 </html>
