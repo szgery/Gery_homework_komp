@@ -34,7 +34,18 @@
     </nav>
     <div class="bg-image"></div>
         <div class="bg-text">
-        <form action=""></form>
+            <form action="/action_page.php">
+                <label for="fname">Matematika:</label><br>
+                <input type="text" id="matek" name="matek" value="100" min="0" max="100" required><br>
+                <label for="lname">Történelem:</label><br>
+                <input type="text" id="tori" name="tori" value="100" min="0" max="100" required><br>
+                <label for="lname">Magyar:</label><br>
+                <input type="text" id="magyar" name="magyar" value="100" min="0" max="100" required><br>
+                <label for="lname">Nyelv:</label><br>
+                <input type="text" id="nyelv" name="nyelv" value="100" min="0" max="100" required><br><br>
+                <input type="submit" value="Számítás">
+              </form>
+              <p>Az eredményed: <span id="eredmeny"></span></p> 
     </div>
 </body>
 
