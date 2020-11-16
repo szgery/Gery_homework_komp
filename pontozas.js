@@ -10,6 +10,24 @@ function Szamol(){
 
     var stuff = [];
 
+    try{
+        //matek irasbeli exceptions
+        if(matekIrasbeli > 100) throw "A szam tul nagy";
+        if(matekIrasbeli < 0) throw "A szam tul kicsi";
+
+        //matek szobeli exceptions
+        if(matekSzobeli > 50) throw "A szam tul nagy";
+        if(matekSzobeli < 0) throw "A szam tul kicsi";
+
+        //szam vizsgalat
+        if(isNaN(matekIrasbeli)) throw "Nem szam";
+        if(isNaN(matekSzobeli)) throw "Nem szam";
+    }
+    catch(error){
+        alert("Hiba: " + error);
+        document.getElementById("irasbeliMat") = 0;
+    }
+
     if((matekIrasbeli + matekSzobeli*100/50)/2 <= 100 && (matekIrasbeli + matekSzobeli*100/50)/2 >= 80){
         stuff[0] = "Matek 5";
      }
@@ -22,7 +40,25 @@ function Szamol(){
      }else if((matekIrasbeli + matekSzobeli*100/50)/2 <= 24 && (matekIrasbeli + matekSzobeli*100/50)/2 >= 0){
          stuff[0] = "Matek 1";
      }
- 
+
+     try{
+        //matek irasbeli exceptions
+        if(toriIrasbeli > 100) throw "A szam tul nagy";
+        if(toriIrasbeli < 0) throw "A szam tul kicsi";
+
+        //matek szobeli exceptions
+        if(toriSzobeli > 60) throw "A szam tul nagy";
+        if(toriSzobeli < 0) throw "A szam tul kicsi";
+
+        //szam vizsgalat
+        if(isNaN(toriIrasbeli)) throw "Nem szam";
+        if(isNaN(toriSzobeli)) throw "Nem szam";
+    }
+    catch(error){
+        alert("Hiba: " + error);
+        document.getElementById("irasbeliTor") = 0;
+    }
+
      if((toriIrasbeli + toriSzobeli*100/60)/2 <= 100 && (toriIrasbeli + toriSzobeli*100/60)/2 >= 80){
          stuff[1] = "Töri 5";
      }
@@ -36,6 +72,25 @@ function Szamol(){
          stuff[1] = "Töri 1";
      }
  
+     
+     try{
+        //matek irasbeli exceptions
+        if(magyarIrasbeli > 100) throw "A szam tul nagy";
+        if(magyarIrasbeli < 0) throw "A szam tul kicsi";
+
+        //matek szobeli exceptions
+        if(magyarSzobeli > 50) throw "A szam tul nagy";
+        if(magyarSzobeli < 0) throw "A szam tul kicsi";
+
+        //szam vizsgalat
+        if(isNaN(magyarIrasbeli)) throw "Nem szam";
+        if(isNaN(magyarSzobeli)) throw "Nem szam";
+    }
+    catch(error){
+        alert("Hiba: " + error);
+        document.getElementById("irasbeliMagy") = 0;
+    }
+
      if((magyarIrasbeli + magyarSzobeli*100/50)/2 <=100 && (magyarIrasbeli + magyarSzobeli*100/50)/2 >=80){
          stuff[2] = "Magyar 5";
      }
@@ -48,6 +103,25 @@ function Szamol(){
      }else if((magyarIrasbeli + magyarSzobeli*100/50)/2 <=24 && (magyarIrasbeli + magyarSzobeli*100/50)/2 >=0){
          stuff[2] = "Magyar 1";
      }
+
+     
+     try{
+        //matek irasbeli exceptions
+        if(nyelvIrasbeli > 100) throw "A szam tul nagy";
+        if(nyelvIrasbeli < 0) throw "A szam tul kicsi";
+
+        //matek szobeli exceptions
+        if(nyelvSzobeli > 33) throw "A szam tul nagy";
+        if(nyelvSzobeli < 0) throw "A szam tul kicsi";
+
+        //szam vizsgalat
+        if(isNaN(nyelvIrasbeli)) throw "Nem szam";
+        if(isNaN(nyelvSzobeli)) throw "Nem szam";
+    }
+    catch(error){
+        alert("Hiba: " + error);
+        document.getElementById("irasbeliNyelv") = 0;
+    }
 
     if((nyelvIrasbeli + nyelvSzobeli*100/33)/2 <= 100 && (nyelvIrasbeli + nyelvSzobeli*100/33)/2 >= 80){
         stuff[3] = "Nyelv 5";
